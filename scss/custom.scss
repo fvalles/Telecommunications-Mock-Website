@@ -1,0 +1,347 @@
+@import "../bootstrap-4.4.1/scss/mixins";
+@import "../bootstrap-4.4.1/scss/functions"; 
+@import "../bootstrap-4.4.1/scss/variables";
+
+$limeade: #5BC500;
+$abbey: #50535A;
+$cerulean: #00A9E0;
+$mandy: #E9426D;
+$gray-nurse: #E9EAE8;
+
+$theme-colors: (
+  "custom-green": $limeade,
+  "custom-dark-gray": $abbey,
+  "custom-light-blue": $cerulean,
+  "custom-fuchsia": $mandy,
+  "custom-light-gray": $gray-nurse
+);
+
+$original-cucarda-height: 682px;
+$original-cucarda-width: 667px;
+$original-logo-height: 41px;
+$original-logo-width: 216px;
+
+$font-size-base: 1rem;
+$small-font-size: 0.89 * $font-size-base;
+$default-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+$h7-font-size: $font-size-base * 0.75;
+$h8-font-size: $font-size-base * 0.55;
+
+$grid-breakpoints: (
+  xs: 0,
+  xxs: 450px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1300px
+);
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.banner {
+    position: relative;
+    width: 100;
+}
+
+.banner-img {
+  position: relative;
+  width: 100%;
+}
+
+.banner-lg {
+  display: block;
+  font-family: $default-font-family;
+  margin: 10px auto 15px;
+  @include media-breakpoint-up(xl) { 
+    display: none;
+  }
+}
+
+.banner-lg-h1 {
+  font-family: $default-font-family;
+  font-size: $h6-font-size;
+  margin: 10px auto 15px;
+  @include media-breakpoint-up(xxs) { 
+    font-family: $default-font-family;
+    font-size: $h4-font-size;
+    margin: 10px auto 15px;
+  }
+  @include media-breakpoint-up(sm) { 
+    font-family: $default-font-family;
+    font-size: $h3-font-size;
+    margin: 10px auto 15px;
+  }
+  @include media-breakpoint-up(md) { 
+    font-family: $default-font-family;
+    font-size: $h2-font-size;
+    margin: 10px auto 15px;
+  }
+}
+
+.banner-xl {
+  display: none;
+  @include media-breakpoint-up(xl) { 
+    display: block;
+    font-family: $default-font-family;
+    left: 70px;
+    position: absolute;
+    top: 70px;
+  }
+}
+
+.bottom-section {
+  height: auto;
+  width: 100%;
+}
+
+.button-style {
+  padding: .45rem 1rem;
+  @include media-breakpoint-up(sm) { 
+    padding: .75rem 2rem;
+  }
+}
+
+.button-text {
+  font-size: $small-font-size * 0.85;
+  @include media-breakpoint-up(xxs) { 
+    font-size: $small-font-size;
+  }
+}
+
+.card-body-mg {
+  margin: 0 50px 15px;
+  @include media-breakpoint-up(xxs) { 
+    margin: 0 90px 15px;
+  }
+  @include media-breakpoint-up(sm) { 
+    margin: 0 20px;
+  }
+  @include media-breakpoint-up(md) { 
+    margin: 0 40px;
+  }
+}
+
+.card-lower-bd-style {
+  font-size: $h7-font-size;
+  @include media-breakpoint-up(xxs) { 
+    font-size: $h6-font-size;
+  }
+}
+
+.card-text-style {
+  font-family: $default-font-family;
+}
+
+.card-title-style {
+  font-size: $h5-font-size;
+  @include media-breakpoint-up(xxs) { 
+    font-size: $h4-font-size;
+  }
+}
+
+.card-upper-bd-style {
+  font-size: $h6-font-size;
+  @include media-breakpoint-up(xxs) { 
+    font-size: $h5-font-size;
+  }
+}
+
+.cucarda {
+  width: $original-cucarda-width * 0.17;
+  height: $original-cucarda-height * 0.17;
+  position: absolute;
+  top: 0;
+  margin-left: 50px;
+  display: block;
+  @include media-breakpoint-up(xxs) { 
+    width: $original-cucarda-width * 0.19;
+    height: $original-cucarda-height * 0.19;
+    position: absolute;
+    top: 0;
+    margin-left: 90px;
+    display: block;
+  }
+  @include media-breakpoint-up(sm) { 
+    width: $original-cucarda-width * 0.21;
+    height: $original-cucarda-height * 0.21;
+    position: absolute;
+    top: 0;
+    margin-left: 150px;
+    display: block;
+  }
+  @include media-breakpoint-up(md) { 
+    width: $original-cucarda-width * 0.25;
+    height: $original-cucarda-height * 0.25;
+    position: absolute;
+    top: 0;
+    margin-left: 210px;
+    display: block;
+  }
+  @include media-breakpoint-up(lg) { 
+    width: $original-cucarda-width * 0.3;
+    height: $original-cucarda-height * 0.3;
+    position: absolute;
+    top: 0;
+    margin-left: 300px;
+    display: block;
+  }
+  @include media-breakpoint-up(xl) { 
+    width: $original-cucarda-width * 0.3;
+    height: $original-cucarda-height * 0.3;
+    position: absolute;
+    top: 0;
+    right: 49%;
+    display: block;
+  }
+  @include media-breakpoint-up(xxl) { 
+    width: $original-cucarda-width * 0.35;
+    height: $original-cucarda-height * 0.35;
+    position: absolute;
+    top: 0;
+    right: 49%;
+    display: block;
+  }
+}
+
+.cucarda-text {
+  font-size: $font-size-base * 0.7;
+  position: absolute;
+  top: 30px;
+  margin-left: 80px;
+  color: white;
+  display: block;
+  font-family: $default-font-family;
+  @include media-breakpoint-up(xxs) { 
+    font-size: $font-size-base * 0.9;
+    position: absolute;
+    top: 30px;
+    margin-left: 120px;
+    color: white;
+    display: block;
+  }
+  @include media-breakpoint-up(sm) { 
+    font-size: $font-size-base * 1.1;
+    position: absolute;
+    top: 30px;
+    margin-left: 182px;
+    color: white;
+    display: block;
+  }
+  @include media-breakpoint-up(md) { 
+    font-size: $font-size-base * 1.2;
+    position: absolute;
+    top: 40px;
+    margin-left: 252px;
+    color: white;
+    display: block;
+  }
+  @include media-breakpoint-up(lg) { 
+    font-size: $font-size-base * 1.3;
+    position: absolute;
+    top: 50px;
+    margin-left: 355px;
+    color: white;
+    display: block;
+  }
+  @include media-breakpoint-up(xl) { 
+    font-size: $font-size-base * 1.3;
+    position: absolute;
+    right: 53.2%;
+    top: 55px;
+    color: white;
+    display: block;
+  }
+  @include media-breakpoint-up(xxl) { 
+    font-size: $font-size-base * 1.4;
+    position: absolute;
+    right: 53.9%;
+    top: 65px;
+    color: white;
+    display: block;
+  }
+}
+
+.floating-info {
+  align-items: center;
+  display: flex;
+  font-size: $h8-font-size;
+  @include media-breakpoint-up(md) { 
+    align-items: center;
+    display: flex;
+    font-size: $h7-font-size;
+  }
+}
+
+.floating-info-container {
+  display: flex;
+  left: 75%;
+  padding: 1px;
+  position: absolute;
+  top: 5%;
+  width: 110px;
+  z-index: 900;
+  @include media-breakpoint-up(xxs) { 
+    display: flex;
+    left: 84%;
+    padding: 1px;
+    position: absolute;
+    top: 5%;
+    width: 110px;
+    z-index: 900;
+  }
+  @include media-breakpoint-between(sm, md) {
+    width: 90px;
+  }
+  @include media-breakpoint-up(md) { 
+    display: flex;
+    left: 84%;
+    padding: 2px;
+    position: absolute;
+    top: 5%;
+    width: 133px;
+  }
+}
+
+.floating-info::before {
+  content: url(../img/alert-circle-white.svg);
+  margin: 5px 5px 1px 5px;
+}
+
+.h2-style {
+  font-family: $default-font-family;
+  font-size: $h6-font-size;
+  @include media-breakpoint-up(xxs) { 
+    font-size: $h5-font-size;
+  }
+  @include media-breakpoint-up(md) { 
+    font-size: $h4-font-size;
+  }
+}
+
+.logo-size {
+  height: $original-logo-height * 0.6;
+  width: $original-logo-width * 0.6;
+  @include media-breakpoint-up(xl) { 
+    height: $original-logo-height * 0.8;
+    width: $original-logo-width * 0.8;
+  }
+}
+
+// Overrides must come before you import Bootstrap’s Sass files.
+// Bootstrap docs suggest using the full import stack from bootstrap.scss file as your starting point
+// Look at Getting started --> Theming for more info.
+@import "../bootstrap-4.4.1/scss/bootstrap";
