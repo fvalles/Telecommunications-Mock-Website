@@ -1,4 +1,4 @@
-# Telecommunications company simulated website
+# Simulated website of a telecommunications company
 
 This repository holds the mock website of a Telecommunications company (Fiber Plans section).
 
