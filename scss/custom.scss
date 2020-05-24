@@ -45,16 +45,16 @@ $grid-breakpoints: (
 );
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 .banner {
-    position: relative;
-    width: 100;
+  position: relative;
+  width: 100;
 }
 
 .banner-img {
@@ -101,11 +101,6 @@ body {
     position: absolute;
     top: 70px;
   }
-}
-
-.bottom-section {
-  height: auto;
-  width: 100%;
 }
 
 .button-style {
@@ -340,6 +335,18 @@ body {
     width: $original-logo-width * 0.8;
   }
 }
+
+/*
+  NOTAS:
+
+- No me ponia negrita ni ninguna font-weight en Chrome y en Safari si. Copie y pegue la font-family-sans-serif en mi file
+  custom.scss. Le saque las primeras dos fuentes "-apple-system, BlinkMacSystemFont," y UALÁ! Funciono la negrita
+
+- Ojo porque Bootstrap te pone por defecto padding y margin en varios elementos!
+
+- No encontre la forma de que el alto del body ocupe el 100% en iPad y iPadPro ... :(
+
+*/
 
 // Overrides must come before you import Bootstrap’s Sass files.
 // Bootstrap docs suggest using the full import stack from bootstrap.scss file as your starting point
